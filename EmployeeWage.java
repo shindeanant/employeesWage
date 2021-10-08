@@ -47,10 +47,14 @@ public class EmployeeWage {
 			empWage = empHr * empRatePerHours;
 			totalEmpWage = totalEmpWage + empWage;
 			System.out.println("Days" + totalWorkingDays + "emphrs" + empHr);
-			System.out.println("Wage" + totalEmpWage);
+			System.out.println("Wage : " + totalEmpWage);
+
 		}
 
-		System.out.println("Total wage" + totalEmpWage);
+		totalEmpWage = totalEmpWage + empWage;
+		System.out.println("Total emp wage for company: " + totalEmpWage);
+
+
 	}
 
 }
