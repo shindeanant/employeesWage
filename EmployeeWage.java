@@ -9,6 +9,8 @@ public class EmployeeWage {
 	int partTimeWage;
 	int partTimeHours = 4;
 	int employeeHour;
+	int daysPerMonth = 20;
+	int monthlyWage;
 
 	public void employeeAttdence() {
 		int empCheck = (int) (Math.random() * 10) % 2;
@@ -48,6 +50,13 @@ public class EmployeeWage {
 			System.out.println("Absent");
 			break;
 		}
+		System.out.println();
+	}
+
+	public void monthlyWage() {
+
+		monthlyWage = dailyWage * daysPerMonth;
+		System.out.println("Monthly Wage Of Employee is =" + monthlyWage);
 	}
 
 	public static void main(String[] args) {
@@ -57,5 +66,6 @@ public class EmployeeWage {
 		object.dailyWage();
 		object.employeePartTimeWage();
 		object.bySwitchCase();
+		object.monthlyWage();
 	}
 }
